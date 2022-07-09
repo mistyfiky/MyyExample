@@ -1,0 +1,6 @@
+/platform/
+/src/Resources/app/administration/node_modules/
+/src/Resources/public/administration/
+/var/
+/vendor/
+/vendor-bin/*/vendor/
