@@ -24,6 +24,7 @@ ecs-fix : | platform/vendor
 	$(firstword $|)/bin/ecs check --config ecs.php --fix
 .PHONY : ecs-fix
 
+platform/src/Administration/Resources/app/administration/node_modules : export PUPPETEER_SKIP_DOWNLOAD = 1
 platform/src/Administration/Resources/app/administration/node_modules : | platform
 	npm clean-install --prefix $(dir $@)
 
